@@ -72,6 +72,9 @@ export function CabinetLoginScreen({ navigation }: Props) {
           contentContainerStyle={styles.scroll}
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
+          bounces={false}
+          alwaysBounceVertical={false}
+          overScrollMode="never"
         >
           <View style={styles.header}>
             <View style={[styles.iconBg, { backgroundColor: c.brand }]}>
@@ -165,7 +168,6 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     padding: spacing.lg,
     justifyContent: "center",
-    paddingBottom: spacing.xxl * 2,
   },
   header: {
     alignItems: "center",
